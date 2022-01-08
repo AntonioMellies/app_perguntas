@@ -45,7 +45,13 @@ class _QuestionsAppState extends State<QuestionApp> {
       _questionIndex++;
       _score += value;
     });
-    print(_score);
+  }
+
+  void _restartQuiz() {
+    setState(() {
+      _questionIndex = 0;
+      _score = 0;
+    });
   }
 
   bool get hasValidAnswer {
@@ -65,7 +71,7 @@ class _QuestionsAppState extends State<QuestionApp> {
                 isValid: hasValidAnswer,
                 reply: _reply,
                 questions: _questions)
-            : Result(_score),
+            : Result(_score, _restartQuiz),
       ),
     );
   }
