@@ -1,8 +1,8 @@
-# projeto_perguntas
+# Quiz App
 
-A new Flutter project.
+This project is an quiz app example created during the learning a programming language Dart/Flutter.
 
-## Getting Started
+## Flutter - Getting Started
 
 This project is a starting point for a Flutter application.
 
